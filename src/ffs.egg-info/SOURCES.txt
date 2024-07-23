@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/ffs/__init__.py
+src/ffs/ffs.py
+src/ffs/pow.py
+src/ffs/turnstile.py
+src/ffs.egg-info/PKG-INFO
+src/ffs.egg-info/SOURCES.txt
+src/ffs.egg-info/dependency_links.txt
+src/ffs.egg-info/entry_points.txt
+src/ffs.egg-info/requires.txt
+src/ffs.egg-info/top_level.txt

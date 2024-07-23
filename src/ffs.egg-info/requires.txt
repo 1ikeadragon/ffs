@@ -1,0 +1,4 @@
+requests
+colorama
+pybase64
+distro

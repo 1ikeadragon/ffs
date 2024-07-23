@@ -3,11 +3,13 @@ import uuid
 import itertools
 import json
 import sys
+import distro
 import subprocess
 from colorama import init, Fore, Style
 from .pow import get_config, get_answer_token, get_requirements_token
 from .turnstile import process_turnstile
 
+# Initialize colorama
 init(autoreset=True)
 
 def main():
@@ -107,6 +109,7 @@ def main():
     for first, second in itertools.pairwise(line for line in response_text if line.strip()):
         if "[DONE]" in second:
             result = json.loads(first.partition(":")[2])['message']['content']['parts'][0]
+            # Remove any markdown or code block formatting and other unnecessary text
             cleaned_result = result.split('```')[0].strip().strip('`').replace("True", "").replace("diff:", "").replace("time:", "").replace("solved:", "").strip()
             print(f"{Fore.GREEN}Corrected Command: {cleaned_result}{Style.RESET_ALL}")
             

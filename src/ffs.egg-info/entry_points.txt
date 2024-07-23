@@ -1,0 +1,2 @@
+[console_scripts]
+ffs = ffs.ffs:main

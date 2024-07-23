@@ -9,6 +9,7 @@ setup(
     package_dir={'': 'src'},  
     install_requires=[
         'requests',
+        'colorama',
         'pybase64',
         'distro'
     ],

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ffs
+Version: 0.1.0
+Summary: fix the last command without ChatGPT API key
+Author: 1ikeadragon
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: colorama
+Requires-Dist: pybase64
+Requires-Dist: distro
+
+# ffs
+
+Made as a joke with [@w1redch4d](https://github.com/w1redch4d) uses code from [howto-term](https://github.com/w1redch4d/howto-term).
